@@ -472,6 +472,16 @@ Selected Target → Node A
 This demonstrates the ability of the load balancer to make intelligent routing decisions based on real-time cluster telemetry rather than static scheduling rules.
 
 
+
+
+### 📸 Task 4 Execution & Visual Evidence
+* <p align="center">
+  <img src="Images/img_14.png" width="31%" alt="Optimistic UI Launch" />
+  <img src="Images/img_15.png" width="31%" alt="Jittered Backoff Log" />
+  <img src="Images/img_16.png" width="31%" alt="Rollback Mechanism" />
+</p>
+
+### 🖥️ Real-Time Execution Trace Analysis (LOAD BALANCER)
 ```text
 I/flutter ( 8208): LOAD_BALANCER_LOG: [19:22:04] 🔀 [Routing]: Strategy [Round Robin] -> Dispatching to Node B
 I/flutter ( 8208): LOAD_BALANCER_LOG: [19:22:05] 🎯 [Response]: Node B processed request successfully.
@@ -502,15 +512,6 @@ I/flutter ( 8208): LOAD_BALANCER_LOG: [19:22:27] 🎯 [Response]: Node A process
 I/flutter ( 8208): LOAD_BALANCER_LOG: [19:22:27] 🔀 [Routing]: Strategy [Adaptive Telemetry Feedback] -> Dispatching to Node A
 I/flutter ( 8208): LOAD_BALANCER_LOG: [19:22:27] 🎯 [Response]: Node A processed request successfully.
 ```
-
-### 📸 Task 3 Execution & Visual Evidence
-* <p align="center">
-  <img src="Images/img_7.png" width="31%" alt="Optimistic UI Launch" />
-  <img src="Images/img_12.png" width="31%" alt="Jittered Backoff Log" />
-  <img src="Images/img_9.png" width="31%" alt="Rollback Mechanism" />
-  <img src="Images/img_10.png" width="31%" alt="Rollback Mechanism" />
-  <img src="Images/img_11.png" width="31%" alt="Rollback Mechanism" />
-</p>
 
 
 
