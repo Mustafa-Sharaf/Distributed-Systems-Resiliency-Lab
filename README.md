@@ -38,7 +38,7 @@ To prevent **Race Conditions** where a user might trigger multiple mutations on 
 * **Fault Simulation:** Implemented a non-deterministic RPC mock layer with a $75\%$ failure rate to rigorously test the client-side resiliency logic under extreme network stress.
 * 
 ### 📸 Execution & Visual Evidence
-*(Insert your project screenshots in this section to demonstrate your live output to the reviewer)*
+
 * <p align="center">
   <img src="Images/img.png" width="31%" alt="Optimistic UI Launch" />
   <img src="Images/img_1.png" width="31%" alt="Jittered Backoff Log" />
