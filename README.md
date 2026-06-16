@@ -248,7 +248,7 @@ This mechanism functions as a lightweight chaos-engineering environment, enablin
 ### 📸 Task 3 Execution & Visual Evidence
 * <p align="center">
   <img src="Images/img_7.png" width="31%" alt="Optimistic UI Launch" />
-  <img src="Images/img_8.png" width="31%" alt="Jittered Backoff Log" />
+  <img src="Images/img_12.png" width="31%" alt="Jittered Backoff Log" />
   <img src="Images/img_9.png" width="31%" alt="Rollback Mechanism" />
   <img src="Images/img_10.png" width="31%" alt="Rollback Mechanism" />
   <img src="Images/img_11.png" width="31%" alt="Rollback Mechanism" />
@@ -263,4 +263,43 @@ To demonstrate monitoring precision and recovery behavior, screenshots capture t
 ### 🖥️ Real-Time Execution Trace Analysis (Heartbeat Logs)
 
 Below is an authentic execution trace captured from the integrated monitoring terminal, illustrating periodic heartbeat probes, immediate fault identification, service state transitions, and automated recovery recognition following administrative chaos injections.
+
+```text
+I/flutter (31981): HEARTBEAT_LOG: [09:22:28] ⚙️ [System]: 3 Microservices started in background.
+I/flutter (31981): HEARTBEAT_LOG: [09:22:31] 💓 [Heartbeat]: Ping to Warehouse Service successful. Status -> HEALTHY
+I/flutter (31981): HEARTBEAT_LOG: [09:22:31] 💓 [Heartbeat]: Ping to Fleet Service successful. Status -> HEALTHY
+I/flutter (31981): HEARTBEAT_LOG: [09:22:31] 💓 [Heartbeat]: Ping to Procurement Service successful. Status -> HEALTHY
+I/flutter (31981): HEARTBEAT_LOG: [09:22:46] 🔧 [Admin]: Toggled Warehouse Service to OFF
+I/flutter (31981): HEARTBEAT_LOG: [09:22:49] 🚨 [Monitor]: Warehouse Service is not responding! Status -> DEAD
+I/flutter (31981): HEARTBEAT_LOG: [09:22:49] 💓 [Heartbeat]: Ping to Fleet Service successful. Status -> HEALTHY
+I/flutter (31981): HEARTBEAT_LOG: [09:22:49] 💓 [Heartbeat]: Ping to Procurement Service successful. Status -> HEALTHY
+I/flutter (31981): HEARTBEAT_LOG: [09:22:52] 🚨 [Monitor]: Warehouse Service is not responding! Status -> DEAD
+I/flutter (31981): HEARTBEAT_LOG: [09:22:52] 💓 [Heartbeat]: Ping to Fleet Service successful. Status -> HEALTHY
+I/flutter (31981): HEARTBEAT_LOG: [09:22:52] 💓 [Heartbeat]: Ping to Procurement Service successful. Status -> HEALTHY
+I/flutter (31981): HEARTBEAT_LOG: [09:22:55] 🚨 [Monitor]: Warehouse Service is not responding! Status -> DEAD
+I/flutter (31981): HEARTBEAT_LOG: [09:22:55] 💓 [Heartbeat]: Ping to Fleet Service successful. Status -> HEALTHY
+I/flutter (31981): HEARTBEAT_LOG: [09:22:55] 💓 [Heartbeat]: Ping to Procurement Service successful. Status -> HEALTHY
+I/flutter (31981): HEARTBEAT_LOG: [09:22:58] 🚨 [Monitor]: Warehouse Service is not responding! Status -> DEAD
+I/flutter (31981): HEARTBEAT_LOG: [09:22:58] 💓 [Heartbeat]: Ping to Fleet Service successful. Status -> HEALTHY
+I/flutter (31981): HEARTBEAT_LOG: [09:22:58] 💓 [Heartbeat]: Ping to Procurement Service successful. Status -> HEALTHY
+I/flutter (31981): HEARTBEAT_LOG: [09:23:01] 🚨 [Monitor]: Warehouse Service is not responding! Status -> DEAD
+I/flutter (31981): HEARTBEAT_LOG: [09:23:01] 💓 [Heartbeat]: Ping to Fleet Service successful. Status -> HEALTHY
+I/flutter (31981): HEARTBEAT_LOG: [09:23:01] 💓 [Heartbeat]: Ping to Procurement Service successful. Status -> HEALTHY
+I/flutter (31981): HEARTBEAT_LOG: [09:23:04] 🚨 [Monitor]: Warehouse Service is not responding! Status -> DEAD
+I/flutter (31981): HEARTBEAT_LOG: [09:23:04] 💓 [Heartbeat]: Ping to Fleet Service successful. Status -> HEALTHY
+I/flutter (31981): HEARTBEAT_LOG: [09:23:04] 💓 [Heartbeat]: Ping to Procurement Service successful. Status -> HEALTHY
+I/flutter (31981): HEARTBEAT_LOG: [09:23:05] 🔧 [Admin]: Toggled Fleet Service to OFF
+I/flutter (31981): HEARTBEAT_LOG: [09:23:07] 🚨 [Monitor]: Warehouse Service is not responding! Status -> DEAD
+I/flutter (31981): HEARTBEAT_LOG: [09:23:07] 🚨 [Monitor]: Fleet Service is not responding! Status -> DEAD
+I/flutter (31981): HEARTBEAT_LOG: [09:23:07] 💓 [Heartbeat]: Ping to Procurement Service successful. Status -> HEALTHY
+I/flutter (31981): HEARTBEAT_LOG: [09:23:17] 🔧 [Admin]: Toggled Fleet Service to ON
+I/flutter (31981): HEARTBEAT_LOG: [09:23:18] 🔧 [Admin]: Toggled Warehouse Service to ON
+I/flutter (31981): HEARTBEAT_LOG: [09:23:19] 💓 [Heartbeat]: Ping to Warehouse Service successful. Status -> HEALTHY
+I/flutter (31981): HEARTBEAT_LOG: [09:23:19] 💓 [Heartbeat]: Ping to Fleet Service successful. Status -> HEALTHY
+I/flutter (31981): HEARTBEAT_LOG: [09:23:19] 💓 [Heartbeat]: Ping to Procurement Service successful. Status -> HEALTHY
+I/flutter (31981): HEARTBEAT_LOG: [09:23:22] 💓 [Heartbeat]: Ping to Warehouse Service successful. Status -> HEALTHY
+
+
+---
+```
 
