@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'CircuitBreaker/CircuitBreakerScreen.dart';
 import 'Client-Jittered-Backoff-and-Jitter-Lockshield/JitterBackoffScreen.dart';
+import 'Resilient-Microservice-Heartbeat/heartbeat_Screen.dart';
 
 
 void main() {
@@ -82,11 +83,29 @@ class DistributedTasksDashboard extends StatelessWidget {
                   child: const Text('2'),
                 ),
                 title: const Text('Circuit Breaker Pattern', style: TextStyle(fontWeight: FontWeight.bold)),
-                subtitle: const Text('Closed/Open/Half-Open States, Load Shedding, Failover Cache'),
+                subtitle: const Text('Closed/Open/Half-Open States, Load Shedding, Fail-over Cache'),
                 trailing: const Icon(Icons.arrow_forward_ios, size: 16),
                 onTap: () => Get.to(() => CircuitBreakerScreen()),
               ),
             ),
+
+            Card(
+              elevation: 4,
+              child: ListTile(
+                leading: CircleAvatar(
+                  backgroundColor: Colors.green,
+                  foregroundColor: Colors.white,
+                  child: const Text('3'),
+                ),
+                title: const Text('Heartbeat & Probing Monitor', style: TextStyle(fontWeight: FontWeight.bold)),
+                subtitle: const Text('Resilient Microservice Heartbeat & Probing Monitor'),
+                trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+                onTap: () => Get.to(() => HeartbeatScreen()),
+              ),
+            ),
+
+
+
           ],
         ),
       ),
