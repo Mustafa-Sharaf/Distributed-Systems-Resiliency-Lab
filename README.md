@@ -1,6 +1,23 @@
 # Distributed Systems Architecture - Core Practical Tasks
 
-This repository contains the practical implementation of key distributed systems patterns designed to improve client-side resiliency, prevent server-side cascading failures, and provide a seamless user experience. 
+This repository contains an advanced, production-grade practical implementation of key distributed systems resilience patterns. Driven by **Flutter** and reactive **GetX state management**, this centralized lab framework demonstrates client-side fault tolerance, high availability, and localized cluster telemetry monitoring.
+
+---
+
+### 🗺️ Project Lab Navigation Index
+* **[🚀 Task 1: Client Jittered Backoff & Jitter Lock Shield](#-task 1-client-jittered-backoff--jitter-lock-shield-advanced)** (Advanced Resiliency Engine)
+* **[🛠️ Task 2: Fault-Tolerant Client Interceptor Service](#%EF%B8%8F-task-2-fault-tolerant-client-interceptor-service-circuit-breaker)** (Finite State Machine Circuit Breaker)
+* **[🛰️ Task 3: Resilient Microservice Heartbeat & Probing Monitor](#%F0%9F%93%A1-task-3-resilient-microservice-heartbeat--probing-monitor)** (Decoupled Background Telemetry Daemon)
+
+---
+
+### 🖥️ Centralized Multi-Task Lab Dashboard
+
+Below is the core mobile architecture control layer designed to dynamically simulate client-server network chaos, failures, and recovery strategies across all implemented distributed patterns:
+
+<p align="center">
+  <img src="Images/lab_dashboard.jpg" width="40%" alt="Distributed Systems Lab Dashboard" />
+</p>
 
 ---
 
