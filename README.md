@@ -34,7 +34,7 @@ This repository demonstrates five core distributed systems resilience and traffi
 * [🛠️ Task 2](#task2)
 * [🛰️ Task 3](#task3)
 * [⚖️ Task 4](#task4)
-* [🛜 Task 5](#task5)
+* [🚦 Task 5](#task5)
 
 
 
@@ -549,7 +549,7 @@ I/flutter ( 8208): LOAD_BALANCER_LOG: [19:22:27] 🎯 [Response]: Node A process
 ---
 
 <a id="task5"></a>
-## 🛜 Task 5: Real-Time WebSocket State Sync Gate (Token Bucket Rate Limiting)
+## 🚦 Task 5: Real-Time WebSocket State Sync Gate (Token Bucket Rate Limiting)
 
 ### 📌 Core Architectural Concepts
 
