@@ -5,9 +5,9 @@ This repository contains an advanced, production-grade practical implementation 
 ---
 
 ### 🗺️ Project Lab Navigation Index
-* **[🚀 Task 1: Client Jittered Backoff & Jitter Lock Shield](#-task 1-client-jittered-backoff--jitter-lock-shield-advanced)** (Advanced Resiliency Engine)
-* **[🛠️ Task 2: Fault-Tolerant Client Interceptor Service](#%EF%B8%8F-task-2-fault-tolerant-client-interceptor-service-circuit-breaker)** (Finite State Machine Circuit Breaker)
-* **[🛰️ Task 3: Resilient Microservice Heartbeat & Probing Monitor](#%F0%9F%93%A1-task-3-resilient-microservice-heartbeat--probing-monitor)** (Decoupled Background Telemetry Daemon)
+* **[🚀 Task 1: Client Jittered Backoff & Jitter Lock Shield](#-task-1-client-jittered-backoff--jitter-lock-shield-advanced)** (Advanced Resiliency Engine)
+* **[🛠️ Task 2: Fault-Tolerant Client Interceptor Service](#-task-2-fault-tolerant-client-interceptor-service-circuit-breaker)** (Finite State Machine Circuit Breaker)
+* **[🛰️ Task 3: Resilient Microservice Heartbeat & Probing Monitor](#-task-3-resilient-microservices-heartbeat--probing-monitor)** (Decoupled Background Telemetry Daemon)
 
 ---
 
